@@ -1,2 +1,12 @@
-// 1, 'Mosh'
-let user: [number, string, boolean, number] = [1, 'Od3n', true, 0];
+// const small = 1;
+// const medium = 1;
+// const large = 1;
+
+const enum Size {
+  Small = 1,
+  Medium,
+  Large,
+}
+
+let mySize: Size = Size.Medium;
+console.log(mySize);
