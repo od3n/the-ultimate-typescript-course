@@ -1,5 +1,9 @@
-let phone = <HTMLInputElement>document.getElementById('phone');
-// let phone = document.getElementById('phone') as HTMLInputElement;
-// HTMLElement
-// HTMLInputElement
-phone.value;
+function render(document: unknown) {
+  // Narrowing
+  if (typeof document === 'string') {
+    document.toUpperCase();
+  }
+  document.move();
+  document.fly();
+  document.whateverWeWant();
+}
