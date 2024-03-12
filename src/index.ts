@@ -1,5 +1,5 @@
-let speed: number | null = null;
-let ride = {
-  // speed: speed !== null ? speed : 30,
-  speed: speed ?? 30,
-};
+let phone = <HTMLInputElement>document.getElementById('phone');
+// let phone = document.getElementById('phone') as HTMLInputElement;
+// HTMLElement
+// HTMLInputElement
+phone.value;
