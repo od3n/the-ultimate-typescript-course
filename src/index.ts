@@ -1,9 +1,14 @@
-function render(document: unknown) {
-  // Narrowing
-  if (typeof document === 'string') {
-    document.toUpperCase();
-  }
-  document.move();
-  document.fly();
-  document.whateverWeWant();
+function reject(message: string): never {
+  throw new Error(message);
 }
+
+
+function processEvents(): never {
+  while (true) {
+    // Read a message from a queue
+  }
+}
+
+reject('...');
+// processEvents();
+console.log('Hello World');
